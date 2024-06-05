@@ -1,0 +1,12 @@
+<header>
+    <nav class="nav">
+      <img src="./assets/logo.png" alt="Logo Pokédex" class="logo">
+      <ul class="nav-list">
+        <li class="nav-item" *ngFor="let item of menu2">
+          <button class="btn btn-header {{item.id}}" id="{{item.id}}"
+                  (click)="onButtonClick(item.id)">{{item.name}}</button>
+        </li>
+  
+      </ul>
+    </nav>
+  </header>
